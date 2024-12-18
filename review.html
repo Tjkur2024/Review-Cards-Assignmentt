@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Flashcards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f8ff;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 100px;
+            background: #007acc;
+            border-radius: 8px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .card .back {
+            display: none;
+        }
+
+        .card:hover .front {
+            display: none;
+        }
+
+        .card:hover .back {
+            display: flex;
+            background: #f0f8ff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Basics Flashcards</h1>
+    <div class="container">
+        <div class="card">
+            <div class="front">HTML stands for?</div>
+            <div class="back">HyperText Markup Language</div>
+        </div>
+        <div class="card">
+            <div class="front">Purpose of &lt;head&gt;?</div>
+            <div class="back">Metadata and links</div>
+        </div>
+        <div class="card">
+            <div class="front">Function of &lt;title&gt;?</div>
+            <div class="back">Browser tab title</div>
+        </div>
+        <div class="card">
+            <div class="front">Hyperlink tag?</div>
+            <div class="back">&lt;a&gt;</div>
+        </div>
+        <div class="card">
+            <div class="front">Default display of &lt;div&gt;?</div>
+            <div class="back">Block</div>
+        </div>
+        <div class="card">
+            <div class="front">Image source attribute?</div>
+            <div class="back">src</div>
+        </div>
+        <div class="card">
+            <div class="front">Footer semantic tag?</div>
+            <div class="back">&lt;footer&gt;</div>
+        </div>
+        <div class="card">
+            <div class="front">List item tag?</div>
+            <div class="back">&lt;li&gt;</div>
+        </div>
+    </div>
+</body>
+</html>
